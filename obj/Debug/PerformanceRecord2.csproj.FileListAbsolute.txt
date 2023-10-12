@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\PerformanceRecord2\bin\Debug\PerformanceRecord2.exe.config
+C:\Users\Admin\source\repos\PerformanceRecord2\bin\Debug\PerformanceRecord2.exe
+C:\Users\Admin\source\repos\PerformanceRecord2\bin\Debug\PerformanceRecord2.pdb
+C:\Users\Admin\source\repos\PerformanceRecord2\obj\Debug\PerformanceRecord2.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\PerformanceRecord2\obj\Debug\PerformanceRecord2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\PerformanceRecord2\obj\Debug\PerformanceRecord2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\PerformanceRecord2\obj\Debug\PerformanceRecord2.exe
+C:\Users\Admin\source\repos\PerformanceRecord2\obj\Debug\PerformanceRecord2.pdb
