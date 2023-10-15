@@ -1,9 +1,10 @@
-﻿using System.Xml;
+﻿using System.Xml.Linq;
 
 namespace PerformanceRecord2.Model.XMLCreator
 {
     public interface ILoadXML
     {
-        XmlDocument LoadXmlDocument(string folderPath, string fileName);
+        XDocument LoadXmlDocument(string folderPath, string fileName);
+      
     }
 }

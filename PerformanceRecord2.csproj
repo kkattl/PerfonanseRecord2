@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controler\ConcretLoader.cs" />
     <Compile Include="Controler\Data.cs" />
+    <Compile Include="Controler\IConcretLouder.cs" />
     <Compile Include="Controler\IData.cs" />
+    <Compile Include="Controler\IOutput.cs" />
+    <Compile Include="Controler\IRequest.cs" />
+    <Compile Include="Controler\OutputOnConsole.cs" />
+    <Compile Include="Controler\OutputOnXML.cs" />
+    <Compile Include="Controler\OutputXMLDocumentOnConsole.cs" />
     <Compile Include="Controler\Requests.cs" />
     <Compile Include="Model\Classes\Course.cs" />
     <Compile Include="Model\Classes\Discipline.cs" />
@@ -55,11 +62,11 @@
     <Compile Include="Model\ConsoleCreator\DisciplineResultConsoleCreation.cs" />
     <Compile Include="Model\ConsoleCreator\IConsoleCreation.cs" />
     <Compile Include="Model\ConsoleCreator\StudentConsoleCreation.cs" />
+    <Compile Include="Model\XMLCreator\ClassesFromXML.cs" />
+    <Compile Include="Model\XMLCreator\IClassesFromXML.cs" />
     <Compile Include="Model\XMLCreator\ILoadXML.cs" />
-    <Compile Include="Model\XMLCreator\IReadXML.cs" />
     <Compile Include="Model\XMLCreator\IWriterXML.cs" />
     <Compile Include="Model\XMLCreator\LoadXML.cs" />
-    <Compile Include="Model\XMLCreator\ReadXML.cs" />
     <Compile Include="Model\XMLCreator\WriteXML.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
