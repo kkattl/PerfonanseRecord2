@@ -1,5 +1,6 @@
 ﻿using PerformanceRecord2.Controler;
 using PerformanceRecord2.Model.XMLCreator;
+using PerformanceRecord2.View;
 using System;
 
 namespace PerformanceRecord2
@@ -13,12 +14,12 @@ namespace PerformanceRecord2
             ConcretLoader concretLoader = new ConcretLoader(xmlLoader, folderPath);
             ClassesFromXML classesFromXML = new ClassesFromXML();
             Requests requests = new Requests(concretLoader, classesFromXML);
-            OutputOnConsole output = new OutputOnConsole(requests);
-            OutputOnXML outputXML = new OutputOnXML(requests, folderPath);
-            //outputXML.OutputCreditModulOnDiscipline(4);
-            //output.OutputCreditModulOnDiscipline(4);
-            OutputXMLDocumentOnConsole document = new OutputXMLDocumentOnConsole(folderPath, "courses.xml");
-            document.XMLDocumentCourse();
+            //Дописати меню
+            //IOutput consoleOutput = new ();
+            //OutputXMLDocumentOnConsole document = new OutputXMLDocumentOnConsole(folderPath, "courses.xml");
+            //Menu menu = new Menu();
+            
+            //document.XMLDocumentCourse();
 
             Console.ReadKey();
         }

@@ -48,6 +48,7 @@
     <Compile Include="Controler\IConcretLouder.cs" />
     <Compile Include="Controler\IData.cs" />
     <Compile Include="Controler\IOutput.cs" />
+    <Compile Include="Controler\IOutputXMLDocumentOnConsole.cs" />
     <Compile Include="Controler\IRequest.cs" />
     <Compile Include="Controler\OutputOnConsole.cs" />
     <Compile Include="Controler\OutputOnXML.cs" />
@@ -70,12 +71,12 @@
     <Compile Include="Model\XMLCreator\WriteXML.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Menu.cs" />
+    <Compile Include="View\MenuList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

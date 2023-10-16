@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace PerformanceRecord2.Controler
 {
-    public class OutputXMLDocumentOnConsole
+    public class OutputXMLDocumentOnConsole : IOutputXMLDocumentOnConsole
     {
         string _folderPath;
         string _filePath;
