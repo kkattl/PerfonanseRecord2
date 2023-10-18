@@ -14,13 +14,26 @@ namespace PerformanceRecord2
             ConcretLoader concretLoader = new ConcretLoader(xmlLoader, folderPath);
             ClassesFromXML classesFromXML = new ClassesFromXML();
             Requests requests = new Requests(concretLoader, classesFromXML);
-            //Дописати меню
-            //IOutput consoleOutput = new ();
-            //OutputXMLDocumentOnConsole document = new OutputXMLDocumentOnConsole(folderPath, "courses.xml");
-            //Menu menu = new Menu();
-            
-            //document.XMLDocumentCourse();
 
+            IOutput consoleOutput = new OutputOnConsole(requests);
+            IOutputXMLDocumentOnConsole outputXMLDocumentOnConsole = new OutputXMLDocumentOnConsole(folderPath, "courses.xml");
+            IOutput xmlOutput = new OutputOnXML(requests, folderPath);
+
+            Console.WriteLine("Choose type of output (1 - console/2 - xml)");
+            if (int.TryParse(Console.ReadLine(), out int choice))
+            {
+                if (choice == 1) { Menu menu = new Menu(outputXMLDocumentOnConsole, consoleOutput); menu.Display(); }
+                if (choice == 2) { Menu menu = new Menu(outputXMLDocumentOnConsole, xmlOutput); menu.Display(); }
+                else
+                {
+                    Console.WriteLine("Incorrect number");
+                }
+            }
+            else
+            {
+                Console.WriteLine("You have to enter number");
+            }
+            
             Console.ReadKey();
         }
     }
